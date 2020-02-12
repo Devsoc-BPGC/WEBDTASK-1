@@ -1,0 +1,177 @@
+ *
+ {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+ body
+ {
+     background: #E8E8E8FF; 
+ }
+ .menu
+ {
+ 	background: #000000FF;
+ 	text-align: left;
+ 	font-size: 15px;
+    
+}
+label.logo
+{
+    color:#FFFFFFFF;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+}
+.menu ul
+{
+	display: inline-flex;
+	color:#FFFFFFFF;
+	list-style: none;
+	margin-left:250px;
+	margin-right: 50px;
+
+}
+.menu ul li
+{
+     width:100%;
+     margin-top: 10px;
+     padding: 15px 15px 15px 10px;
+}
+.menu ul li a
+{
+	text-decoration: none;
+    color: #FFFFFFFF;
+}
+.menu ul li a.active
+{
+	color:#FA041BFF;
+	display: flex;
+}
+.menu ul li a.qw,.menu ul li.gh
+{
+	display: flex;
+}
+.menu ul li a:hover
+{
+	color: #F30B1FFF;
+}
+.submenu
+{
+	display: none;
+}
+.menu ul li:hover .submenu
+{
+	display: block;
+	position: absolute;
+	background: #000000FF;
+	margin-top: 15px;
+	margin-bottom: -15px;
+    margin-left: -150px;
+    width: 250px;
+
+}
+.menu ul li:hover .submenu ul 
+{
+	display: block;
+	margin: 1px; 
+    padding: 1px;
+    line-height: 5px;
+}
+.menu ul li:hover .submenu ul li
+{
+	display: block;
+}
+.submenu-a
+{
+	display:none;
+}
+.sb:hover .submenu-a
+{
+	display: block;
+	position: absolute;
+	background: #000000FF;
+	margin-top: -40px;
+	margin-left: -250px;
+	width: 250px;
+}
+.item
+{
+	display: none;
+}
+.it:hover .item
+{
+	display: block;
+	position: absolute;
+	background: #000000FF;
+	margin-top: -40px;
+	margin-left: -250px;
+	width: 250px;
+}
+.home
+{
+	margin-top: 40px;
+	margin-left: 20px;
+	background: #FFFFFFFF;
+	width: 350px;
+
+}
+.home ul{
+	width:350px;
+	background: #FFFFF;
+}
+.home a
+{
+	display: block;
+	padding: 20px 0 20px 32px;
+	border-bottom: 1px solid #BCBCBCFF;
+}
+
+.home li
+{
+	list-style: none;
+}
+.home ul li a
+{
+	text-decoration: none;
+    color: #000000FF;
+}
+.home ul li.activ
+{
+	color:#FFFFFFFF;
+	background: #000000FF;
+	padding: 10px 0 10px 20px;
+    
+}
+.home ul li a.act
+{
+	color: #FF0017FF;
+	padding-left: 20px;
+
+}
+.home ul li a.act1
+{
+	padding-left: 20px;
+}
+.home ul li a:hover
+{
+	color: #F30B1FFF;
+}
+.main ul
+{
+	display: none;
+}
+.main  li:hover ul
+{
+	display: block;
+}
+.main .fa-caret-down, .main .fa-times
+{
+	float: right;
+	margin-right: 15px;
+
+}
+
+.df
+{
+	display: inline-flex;
+}
