@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; 
+
+}
+
+nav{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.75rem;
+
+}
+
+nav h4{
+    color:white;
+    display: inline;
+    margin: 0 2rem;
+}
+
+.contents{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 60%;
+    /* flex-flow: row wrap;
+    justify-content: space-between;  */
+}   
+
+.contents li{
+    display: inline-block;
+    padding: 0.75rem;
+}
+
+.content_dropdown1{
+
+    display: none;
+    position:absolute;
+    background-color: black;
+    margin-left: -3rem;   
+    width:20rem; 
+}
+
+.content_dropdown1 li{
+    display: block;
+}
+
+.content_dropdown2{
+
+    display: none;
+    position:absolute;
+    background-color: black;
+    width:20rem; 
+    margin-top:-2rem;
+    margin-left:-20rem;  
+}
+
+.content_dropdown3{
+
+    display: none;
+    position:absolute;
+    background-color: black;
+    width:20rem; 
+    margin-top:-2rem;
+    margin-left:-20rem;  
+}
+
+.contents li:hover .content_dropdown1{display: block;}
+
+.content_dropdown1 li:hover .content_dropdown2{display: block;}
+
+.content_dropdown2 li:hover .content_dropdown3{display: block;}
+
+
+
+/* Vertical Navigation bar */
+
+.vert_navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    background-color: #f1f1f1;
+    margin : 2rem 0;
+
+  }
+
+.vert_navbar li{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: red;
+    
+}
+
+.vert_navbar li ul{
+    display: none;
+    padding: 8px 16px;
+    list-style-type: none;      
+}
+
+
+.vert_navbar li:hover ul{display: block;}
+
+
+/* .drp_content{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.no1{
+    display: none;
+}
+
+.no2{
+    display: none;
+}
+
+.no3{
+    display: none;
+}
+
+.dropdiv{
+    position: relative;
+    display: inline-block;
+}
+
+.left_orient{
+    left: auto !important;
+    right: 0 !important;
+}
+  
+.drpdown:hover .no1{display:block;}
+
+.drpdown2:hover .no2{display:block;}
+ */
+
+
+
