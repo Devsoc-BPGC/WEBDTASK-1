@@ -13,12 +13,12 @@ body {
 }
 div.nav {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     width: 100%;
     height: auto;
     position: relative;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: #000000;;
     color: #ffffff;;
 }
@@ -36,17 +36,17 @@ div.dropdn > div.stuff {
     position: absolute;
     z-index: 1;
     transform: translateX(-75%);
-    width: 20rem;
-    padding: 1em;
+    width: 11rem;
+    padding: 0.5em;
     border-radius: 1rem;
 }
 div.dropdn > div.stuff > div.item {
-    color: white;
-    margin: 1em;
+    color: #ffffff;
+    margin: 0.5em;
     padding: 0.5em;
 }
 div.dropdn > div.stuff > div.item:hover {
-    color: red;
+    color: #ff0000;
     cursor: pointer;
 }
 div.dropdn:hover > div.stuff {
