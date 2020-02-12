@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.red {
+    color: red;
+}
+
+/* body */
+
+body {
+    font-family: 'Anton', sans-serif;
+    background-color: #eee;
+}
+
+/* nav */
+
+div.nav {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 5em;
+    padding-right: 5em;
+
+    background-color: black;
+    color: white;
+}
+div.nav > div {
+    flex-grow: 0;
+    padding: 1em;
+    margin: 1em;
+}
+div.nav > div:nth-child(2) {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* dropdn */
+
+div.dropdn {
+    display: inline-block;
+}
+div.dropdn > div.stuff {
+    visibility: hidden;
+    background-color: #000033;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-75%);
+    width: 20rem;
+    padding: 1em;
+
+    border-radius: 1rem;
+}
+div.dropdn > div.stuff > div.item {
+    color: white;
+    margin: 1em;
+    padding: 0.5em;
+}
+div.dropdn > div.stuff > div.item:hover {
+    color: red;
+}
+div.dropdn:hover > div.stuff {
+    visibility: visible;
+}
+
+/* Card */
+
+div.card {
+    display: inline-block;
+    position: relative;
+    min-width: 300px;
+    margin: 1em;
+    background-color: white;
+}
+div.card > div.header {
+    position: relative;
+    height: 20%;
+    min-height: 1em;
+
+    display: flex;
+    align-items: stretch;
+
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+div.card > div.header > span {
+    flex-grow: 0;
+}
+div.card > div.header > span.space {
+    flex-grow: 1;
+}
+
+/* collapsible List */
+
+div.collapsible-list {
+    display: block;
+}
+div.collapsible-list span {
+    display: block;
+    position: relative;
+    width: 100%;
+    color: black;
+
+    padding: 1em;
+
+    border-bottom: lightgray solid 1px;
+}
+div.collapsible-list > div.parent {
+    display: flex;
+    align-items: stretch;
+}
+div.collapsible-list > div.parent > span {
+    flex-grow: 0;
+}
+div.collapsible-list > div.parent > span.space {
+    flex-grow: 1;
+}
+div.collapsible-list > div.parent > span.icon {
+    text-align: right;
+}
+div.collapsible-list > div.children {
+    visibility: hidden;
+    height: 0;
+}
+div.collapsible-list > .parent:hover + div.children {
+    visibility: visible;
+    height: auto;
+}
+div.collapsible-list > .parent + div.children:hover {
+    visibility: visible;
+    height: auto;
+}
+div.collapsible-list > .parent span {
+    color: red;
+}
+div.collapsible-list > .parent {
+    color: red;
+}
+div.collapsible-list > div.children > span {
+    padding-left: 2em;
+}
