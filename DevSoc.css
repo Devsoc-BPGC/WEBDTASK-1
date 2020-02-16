@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.nav > div{
+    padding: 1rem;
+    margin: 0.75rem;
+}
+
+.nav >div:hover{
+    color: red;
+}
+
+.content{
+    margin: 0.75rem;
+    color: white;
+}
+div.down{
+    display: inline-block;
+}
+
+div.down > div.drop {
+    visibility: hidden;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-90%);
+    width: 20rem;
+    padding: 1em;
+    border-radius: 1rem;
+}
+
+div.down > div.drop > div.content:hover {
+    color: red;
+}
+div.down:hover > div.drop {
+    visibility: visible;
+}
+/* CARD */
+.box{
+    display: inline-block;
+    position: relative;
+    background-color: whitesmoke;
+    margin: 1rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20vw;
+    position: relative;
+    height: 5%;
+    background-color: black;
+    color: white;
+   padding: 1rem;
+}
+
+.bottom {
+    display: block;
+}
+.bottom span {
+    display: block;
+    position: relative;
+    color: black;
+    padding: 1em;
+    border-bottom: gray solid 1px;
+}
+
+.parent:hover span:hover{
+    color: red;
+}
+
+.bottom .children {
+    visibility: hidden;
+    height: 0;
+}
+
+.bottom .parent:hover + .children {
+    visibility: visible;
+    height: auto;
+}
+
+.bottom .children:hover {
+    visibility: visible;
+    height: auto;
+}
+
+.bottom .children:hover span:hover {
+    color: red;
+}
